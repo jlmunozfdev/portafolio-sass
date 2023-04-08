@@ -5,7 +5,7 @@
 ### Thank you very much for being here! ❤️
 
 ---
-![Potfolio](https://i.postimg.cc/Vv02h5fQ/Screenshot-2.png)
+![Potfolio]()
 
 <a href="https://jlmunozfdev.github.io/" target="blank">See portfolio <img align="center" src="https://cdn-icons-png.flaticon.com/512/1150/1150626.png" alt="jlmunozf" height="40" width="40"/></a>
 ---
