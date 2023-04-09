@@ -45,3 +45,18 @@
     gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
 }
+
+@mixin heading($color) {
+    color: $color;
+    font-weight: 600;
+    font-size: 4rem;
+
+    &::before {
+        content: '';
+        border: 1px solid lighten(v.$primario, 20%);
+        border-radius: .2rem;
+        padding-right: .5rem;
+        margin-right: 1rem;
+        background-color: lighten(v.$primario, 20%);
+    }
+}
