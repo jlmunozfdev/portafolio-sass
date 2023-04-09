@@ -1,0 +1,66 @@
+@use 'base/variables' as v; 
+@use 'base/mixins' as m;
+/* Entries */
+
+.entries {
+
+    &__grid {
+
+        @include m.tablet { 
+            @include m.grid(2, 2rem);
+        }
+    }
+}
+
+.entrie {
+    
+    &__contenido {
+        background-color: rgba(48, 19, 177, 0.65);
+        max-height: 100rem;
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+
+    &__heading {
+        font-size: 2.5rem;
+        font-weight: 600;
+        display: inline-block;
+        margin-top: 5rem;
+        color: lighten(v.$primario, 10%);
+    
+        @include m.tablet {
+            font-size: 3rem;
+            margin-top: 0;
+        }
+        
+        &::after {
+            content: '';
+            background-color: lighten(v.$negro, 85%);
+            height: 0.5rem;
+            width: calc(100% + 1rem);
+            display: block;
+            margin: -1.4rem 0 0 0;
+        }
+    }
+
+    &__lista {
+        li {
+            
+            h3 {
+                color: v.$grisClaro;
+                font-size: 2.5rem;
+            }
+
+            p {
+                color: v.$grisClaro;
+                font-size: 2rem;
+                font-weight: 600;
+                margin: 0.5rem 0 2rem 0;
+                span {
+                    display: block;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}

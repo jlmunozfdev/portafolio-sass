@@ -1,0 +1,32 @@
+@use 'base/variables' as v; 
+@use 'base/mixins' as m;
+/* About */
+.about {
+    
+
+    &__cabecera {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        
+    }
+
+    &__heading {
+        @include m.heading(v.$primario);
+        font-size: 3rem;
+
+        @include m.tablet { 
+            font-size: 4rem;
+        }
+    } 
+
+    &__boton {
+            @include m.boton(v.$primario, v.$blanco);
+            padding: 1.5rem 2rem;
+            cursor: pointer;
+            @include m.tablet { 
+                padding: 1.5rem 3rem;
+            }
+    }
+}
