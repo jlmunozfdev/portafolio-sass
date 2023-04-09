@@ -1,0 +1,59 @@
+@use 'base/variables' as v; 
+@use 'base/mixins' as m;
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem 0;
+
+    @include m.tablet {
+        background-color: #fff9f9;
+        padding-block: 0;
+        padding-inline: 6rem;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 20rem;
+        margin: 2rem;
+    }
+
+   @include m.desktop {
+        background-color: #fff9f9;
+        padding-block: 0;
+        padding-inline: 6rem;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 20rem;
+        margin: 2rem;
+    }
+
+   &__logo {
+        order: 2;
+
+        @include m.tablet { 
+            order: 0;
+        }
+
+        @include m.desktop { 
+            order: 0;
+        }
+    }
+
+
+    &__heading {
+        color: v.$primario;
+        font-family: v.$fuenteLogo;
+        text-align: center;
+        margin: 0;
+        
+        @include m.tablet { 
+            font-size: 2.5rem;
+        }
+        @include m.desktop { 
+            font-size: 4rem;
+        }
+    } 
+}
+
+

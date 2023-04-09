@@ -4,34 +4,45 @@ html {
     font-size: 62.5%;
     box-sizing: border-box;
 }
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
   
 body {
-    background-color: v.$background-page;
+    background: v.$grisClaro;
     font-family: v.$fuentePrincipal;
     font-size: 1.6rem;
+    position: relative;
+}
+
+/* Mode Dark */
+body.dark-mode {
+    background:  linear-gradient(to top, rgb(17, 24, 39) 50%, rgb(0, 0, 0) 100%);
 }
 
 p {
     font-size: 2rem;
 }
+
 [class$="contenedor"],
 .contenedor {
     width: 95%;
     max-width: 1200px;
     margin: 0 auto;
 }
+
 img {
     max-width: 100%;
     display: block;
 }
+
 ul {
     padding:0;
     list-style: none;
     margin: 0;
 }
+
 .seccion {
     padding: 8rem 0;
 }
