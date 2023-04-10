@@ -26,16 +26,17 @@
 }
 
 .skill {
-    margin: 0 auto;
+    margin-top: 2rem;
     padding: 2rem;
     background: rgba(48, 19, 177, 0.5);
     border-radius: 1rem;
     img {
-        width: 15rem;
+        margin: 0 auto;
+        width: 12rem;
         transition: transform 0.5s;
 
         @include m.tablet { 
-            width: 20rem;
+            width: 18rem;
         }
         @include m.desktop { 
             width: 25rem;
