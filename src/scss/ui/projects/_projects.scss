@@ -1,0 +1,107 @@
+@use 'base/variables' as v; 
+@use 'base/mixins' as m;
+/* Projects */
+
+
+.projects {
+   
+
+    &__heading {
+        @include m.heading(v.$primario);
+        font-size: 3rem;
+
+        @include m.tablet { 
+            font-size: 4rem;
+        }
+    }
+
+    &__grid {
+        @include m.tablet { 
+            @include m.grid(2, 4rem);
+        }
+
+        @include m.desktop { 
+            @include m.grid(3, 8rem);
+        }
+    }
+}
+
+.project {
+    margin-top: 5rem;
+
+    &__grid {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+        padding: 2rem 0;
+        background-color: rgba(48, 19, 177, 0.65);
+        border-radius: 1rem;
+        max-height: 70rem;
+        transition: transform .3s;
+
+
+        &:hover {
+            transform: rotate(4deg) scale(1.1);
+        }
+
+    }
+
+    &__heading {
+        color: v.$blanco;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 500;
+        font-family: v.$fuenteSecundaria;
+        letter-spacing: 0.5rem;
+        text-transform: uppercase;
+    }
+
+    &__recursos {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding-bottom: 2rem;;
+    }
+
+    &__imagen {
+        width: 5rem;
+    }
+
+    &__picture {
+
+        img {
+            width: 80%;
+            margin: 0 auto;
+            border-radius: 0.5rem;
+            
+        }
+    }
+
+
+    &__enlace {
+        display: flex;
+        justify-content: center;
+        margin-block: 1rem;
+
+        a {
+            text-align: center;
+            text-transform: uppercase;
+            padding: 1rem 4rem;
+            border: none;
+            background-color: v.$primario;
+            border-radius: 4px;
+            color: darken(v.$blanco, 20%);
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition-property: transform;
+            transition-duration: .3s;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(0.9);
+            }
+        }
+    }
+    
+}
+
