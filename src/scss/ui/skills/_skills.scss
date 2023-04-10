@@ -1,0 +1,61 @@
+@use 'base/variables' as v; 
+@use 'base/mixins' as m;
+
+/* Skills */
+.skills {
+
+    &__heading {
+        @include m.heading(v.$primario);
+    }
+
+    &__grid {
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        
+
+        @include m.tablet { 
+            @include m.grid(3, 2rem);
+        }
+
+        @include m.desktop { 
+            @include m.grid(5, 2rem);
+        }
+    }
+}
+
+.skill {
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgba(48, 19, 177, 0.5);
+    border-radius: 1rem;
+    img {
+        width: 15rem;
+        transition: transform 0.5s;
+
+        @include m.tablet { 
+            width: 20rem;
+        }
+        @include m.desktop { 
+            width: 25rem;
+        }
+    }
+
+    img[alt="bootstrap"] {
+        filter: invert(10%) sepia(87%) saturate(4925%) hue-rotate(287deg) brightness(105%) contrast(95%);
+    }
+
+    img[alt="github"] {
+        filter: brightness(6) invert(1);  
+    }
+
+    img[alt="html"]:hover, img[alt="css"]:hover, 
+    img[alt="javascript"]:hover, img[alt="sass"]:hover,
+    img[alt="bash"]:hover, img[alt="linux"]:hover,
+    img[alt="adobe_ilustrator"]:hover, img[alt="adobe_photoshop"]:hover,
+    img[alt="github"]:hover, img[alt="bootstrap"]:hover {
+    transform: translateY(4px) rotateY(50deg);
+}
+
+}
