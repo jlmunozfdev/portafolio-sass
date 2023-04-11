@@ -8,7 +8,7 @@
         grid-template-columns: 2fr 1fr;
         height: 50rem;
         align-items: center;
-        @include m.imagenBG('https://images.unsplash.com/photo-1607971584791-aca00eb17fd5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+        @include m.imagenBG('/assets/img/projects/projects.webp');
         
     }
 
