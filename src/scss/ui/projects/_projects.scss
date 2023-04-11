@@ -5,13 +5,10 @@
 
 .projects {
    
-
     &__cabecera {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        
     }
 
     &__heading {
@@ -27,15 +24,13 @@
             @include m.boton(v.$primario, v.$blanco);
             padding: 1.5rem 2rem;
             cursor: pointer;
+
             @include m.tablet { 
                 padding: 1.5rem 3rem;
             }
     }
 
     &__grid {
-
-       
-
         @include m.tablet { 
             @include m.grid(2, 4rem);
         }
@@ -65,7 +60,6 @@
         border-radius: 1rem;
         max-height: 70rem;
         transition: transform .3s;
-
 
         &:hover {
             transform: rotate(4deg) scale(1.1);
@@ -104,29 +98,17 @@
         }
     }
 
-
     &__enlace {
         display: flex;
         justify-content: center;
         margin-block: 1rem;
 
         a {
-            text-align: center;
+            @include m.boton(v.$primario, darken(v.$grisClaro, 20%));
             text-transform: uppercase;
             padding: 1rem 4rem;
-            border: none;
-            background-color: v.$primario;
-            border-radius: 4px;
-            color: darken(v.$blanco, 20%);
             font-size: 1.2rem;
             font-weight: 600;
-            transition-property: transform;
-            transition-duration: .3s;
-            cursor: pointer;
-
-            &:hover {
-                transform: scale(0.9);
-            }
         }
     }
     

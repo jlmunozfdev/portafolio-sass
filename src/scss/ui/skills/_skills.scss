@@ -13,8 +13,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
-        
-
+    
         @include m.tablet { 
             @include m.grid(3, 2rem);
         }
@@ -56,7 +55,7 @@
     img[alt="bash"]:hover, img[alt="linux"]:hover,
     img[alt="adobe_ilustrator"]:hover, img[alt="adobe_photoshop"]:hover,
     img[alt="github"]:hover, img[alt="bootstrap"]:hover {
-    transform: translateY(4px) rotateY(50deg);
-}
+        transform: translateY(4px) rotateY(50deg);
+    }
 
 }
