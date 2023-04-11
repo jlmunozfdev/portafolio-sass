@@ -90,28 +90,6 @@
         color: v.$blanco;
     }
 
-    svg {
-        
-        
-        @include m.tablet { 
-            
-        }
-
-       
-    }
-
-    &__image {
-
-        img {
-            width: 50%;
-             margin: 0 auto;
-
-            @include m.tablet { 
-                width: 80%;
-                margin: 0 auto;
-            }
-        }
-
-    }
+    
 
 }
