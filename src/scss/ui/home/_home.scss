@@ -4,13 +4,14 @@
 
 .home {
 
+    position: relative;
+
     @include m.tablet {
         display: grid;
         grid-template-columns: 2fr 1fr;
         height: 50rem;
         align-items: center;
-        @include m.imagenBG('/assets/img/home/home.webp');
-        
+        @include m.imagenBG('/assets/img/home/home.webp'); 
     }
 
     &__heading {
@@ -39,9 +40,19 @@
 
     &__texto {
         color: v.$negroClaro;
+        
 
-        @include m.tablet { 
+        @include m.tablet {
+            @include m.animacion;
+            left: 4rem;
+            right: 4rem;
+            padding-right: 20rem;
             color: v.$blanco;
+        }
+
+        @include m.desktop {
+            @include m.animacion;
+            padding-right: 30rem;
         }
     }
 }
