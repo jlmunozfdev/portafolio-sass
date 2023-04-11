@@ -31,7 +31,13 @@
 
 .project {
 
-    margin-top: 5rem;
+    @include m.phoneSmall { 
+        margin-top: 5rem;
+    }
+
+    @include m.tablet { 
+        margin-top: 2rem;
+    }
 
     &__grid {
         display: flex;
