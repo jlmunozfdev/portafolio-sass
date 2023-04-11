@@ -17,17 +17,7 @@
         border-radius: 20rem;
         margin: 2rem;
     }
-
-   @include m.desktop {
-        background-color: #fff9f9;
-        padding-block: 0;
-        padding-inline: 6rem;
-        flex-direction: row;
-        justify-content: space-between;
-        border-radius: 20rem;
-        margin: 2rem;
-    }
-
+    
    &__logo {
         order: 2;
 
@@ -39,7 +29,6 @@
             order: 0;
         }
     }
-
 
     &__heading {
         font-family: v.$fuenteLogo;
