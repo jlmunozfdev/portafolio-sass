@@ -1,0 +1,107 @@
+@use 'base/variables' as v; 
+@use 'base/mixins' as m;
+/* Contact */
+
+.contact {
+
+    &__heading {
+        @include m.heading(v.$primario);
+    }
+
+    &__form {
+        background: rgba(48, 19, 177, 0.5);
+        border-radius: 4px;
+        padding: 40px 40px;
+
+        @include m.desktop { 
+            @include m.grid(2, 0);
+            align-items: center;
+        }
+    }
+}
+
+.formulario {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    @include m.desktop { 
+        gap: 2rem;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        label {
+            color: v.$blanco;
+            font-size: 2rem;
+            font-weight: 600;
+            font-family: v.$fuenteSecundaria;
+
+            @include m.tablet { 
+                font-size: 2.5rem;
+            }
+        }
+
+        input {
+            border: none;
+            padding-block: 1rem;
+            border-radius: 0.2rem;
+            padding: 20px;
+            caret-color: white;
+           
+            &:focus {
+                box-shadow: 0 1px 1px rgb(52 50 179 / 0.075) inset, 0 0 8px #fafafa;
+                outline: 0 none;
+            }
+        }
+
+        input[type="text"],
+        input[type="email"]{
+            color: white;
+            background: rgb(5 29 65 / 0.7);
+        }
+
+
+
+        textarea {
+            background-color: rgb(5 29 65 / 0.7);
+            border: none;
+            resize: vertical;
+            padding: 20px;
+            caret-color: white;
+            color: white;
+            height: 150px;
+            border-radius: 0.2rem;
+
+            @include m.tablet { 
+                height: 200px;
+            }
+
+            &:focus {
+                box-shadow: 0 1px 1px rgb(52 50 179 / 0.075) inset, 0 0 8px #fafafa;
+                outline: 0 none;
+            }
+        }
+
+        input[type="submit"] {
+            @include m.boton(v.$primario, v.$blanco);
+            padding-block: 2rem;
+            font-size: 2rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+    }
+}
+
+.svg {
+    display: none;
+    
+    @include m.desktop { 
+        display: block;
+    }
+}
