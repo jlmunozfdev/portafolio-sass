@@ -67,3 +67,67 @@
         background-color: lighten(v.$primario, 20%);
     }
 }
+
+@mixin typewriter($wd1, $wd2) {
+    font-family: v.$fuenteSecundaria;
+    color: #e73c7e;
+    font-size: 2.5rem;
+    font-weight: 100;
+    font-style: italic;
+    opacity: 0.8;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+    border-right: solid 3px #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+            animated-text 4s steps(29,end) 1s 1 normal both, 
+            animated-cursor 600ms steps(29,end) infinite;
+    
+    
+    /* Animation */
+
+    @keyframes animated-text{
+        from{
+            width: $wd1;
+        }
+        to{
+            width: $wd2;
+        }
+    }
+
+    /* Cursor Animation */
+
+    @keyframes animated-cursor{
+        from{border-right-color: v.$secundarioOscuro;}
+        to{border-right-color: transparent;}
+    }
+}
+
+@mixin imagenBG($url){
+        background-image: url($url);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border-radius: 1rem;
+}
+
+@mixin textoDeg {
+    display: block;
+    font-size: 5rem;
+    font-family: v.$fuentePrincipal;
+    font-weight: 600;
+    animation: gradient 10s ease-in-out infinite;
+    background: linear-gradient(-45deg, v.$blanco,#ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @keyframes gradient {
+    0% { background-position: 0 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0 50% }
+    }
+}
+
