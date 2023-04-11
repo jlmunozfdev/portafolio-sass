@@ -19,7 +19,6 @@
 
     &__heading {
         color: v.$secundarioOscuro;
-        
 
         a {
             display: block;
@@ -44,7 +43,10 @@
     }
 
     &__grid {
-       @include m.tablet { 
+        @include m.tablet { 
+            padding-left: 3rem;
+        }
+       @include m.desktop { 
             padding-left: 10rem;
        }
     }
