@@ -2,6 +2,13 @@
 @use 'globales' as g;
 
 /** Media Queries **/
+@mixin phoneSmall {
+    @media (min-width: v.$phoneSmall) {
+        @content;
+    }
+}
+
+
 @mixin telefono {
     @media (min-width: v.$telefono) {
         @content;
