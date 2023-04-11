@@ -16,6 +16,9 @@
     }
 
     &__grid {
+
+       
+
         @include m.tablet { 
             @include m.grid(2, 4rem);
         }
@@ -27,7 +30,8 @@
 }
 
 .project {
-    margin-top: 2rem;
+
+    margin-top: 5rem;
 
     &__grid {
         display: flex;
