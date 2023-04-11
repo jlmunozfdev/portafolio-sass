@@ -87,7 +87,11 @@
     }
 
     &__texto {
-        color: v.$blanco;
+        color: v.$negroClaro;
+
+        @include m.tablet { 
+            color: v.$blanco;
+        }
     }
 
     
