@@ -2,24 +2,24 @@
 @use 'base/mixins' as m;
 /* Toggle */
 
-.toggles {
+.togglesM {
+  display: flex;
+  justify-content: flex-end;
   margin: 2rem;
   
 
   @include m.tablet { 
     margin: 0;
-    align-self: center;
     margin-right: 0;
   }
 }
 
-.toggle {
+.toggleM {
     position: relative;
     top: 0;
     bottom: 0;
     width: 60px;
     height: 25px;
-    margin: 0 auto;
     border-radius: 40px;
 
     [type="checkbox"] {

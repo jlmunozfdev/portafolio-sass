@@ -1,8 +1,18 @@
+/* Toggle Menu*/
 const themeToggle = document.querySelector('#toggle');
+const themeToggle2 = document.querySelector('#menu-toggle');
 
 themeToggle.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
 });
+
+themeToggle2.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});
+
+
+
+
 
 /* Button  Download CV */
 function descargarPDF() {
