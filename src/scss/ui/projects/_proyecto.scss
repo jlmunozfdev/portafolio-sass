@@ -2,7 +2,9 @@
 @use 'base/mixins' as m;
 
 .proyecto {
+
     position: relative;
+    margin-top: 1rem;
     
     @include m.tablet {
         display: grid;
@@ -50,6 +52,10 @@
             padding-right: 30rem;
         }
     }
+}
+
+.cards {
+    margin-top: 2rem;
 }
 
 

@@ -4,7 +4,11 @@
 
 .footer {
     margin-top: 5rem;
-    background: rgba(48, 19, 177, 0.5);
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 2px 8px 0 rgba(48, 19, 177, 0.35);
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    
     padding: 1rem 2rem;
 
     @include m.tablet { 
@@ -16,7 +20,7 @@
     &__copyright {
         text-align: center;
         font-size: 1.5rem;
-        color: v.$blanco;
+        color: v.$negroClaro;
 
         @include m.tablet { 
             font-size: 2rem;

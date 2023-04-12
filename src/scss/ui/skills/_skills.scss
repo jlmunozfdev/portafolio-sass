@@ -4,6 +4,13 @@
 /* Skills */
 .skills {
 
+    @include m.tablet { 
+        margin-top: 8rem;
+    }
+    @include m.desktop { 
+        margin-top: 10rem;
+    }
+
     &__heading {
         @include m.heading(v.$primario);
     }

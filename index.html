@@ -23,27 +23,32 @@
 
     <header class="header">
 
-        <div class="header__logo">
-            <h1 class="header__heading"><a href="index.html">Jorge Muñoz</a></h1>
-        </div>
+        <div class="header__contenedor">
+            <div class="header__logo">
+                <h1 class="header__heading"><a href="index.html">Jorge Muñoz</a></h1>
+            </div>
+        
+            <nav class="navegacion">          
+                <a class="navegacion__enlace"  href="#about">About me</a>               
+                <a class="navegacion__enlace"  href="#projects">Projects</a>    
+                <a class="navegacion__enlace"  href="#skills">Skills</a>
+                <a class="navegacion__enlace"  href="#contact">Contact</a> 
+            </nav>
     
-        <nav class="navegacion">          
-            <a class="navegacion__enlace"  href="#about">About me</a>               
-            <a class="navegacion__enlace"  href="#projects">Projects</a>    
-            <a class="navegacion__enlace"  href="#skills">Skills</a>
-            <a class="navegacion__enlace"  href="#contact">Contact</a> 
-        </nav>
-
-        <div class="toggles">
-            <div class="toggle" id="toggle">
-                <input type="checkbox">
-                <span></span>
-            </div>
-
-            <div id="hamburger">
-                <div></div>
+            <div class="toggles">
+                <div class="toggle" id="toggle">
+                    <input type="checkbox">
+                    <span></span>
+                </div>
+    
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
             </div>
         </div>
+
     </header>
 
     <section id="home" class="home contenedor">
@@ -64,8 +69,9 @@
 
     </section>
 
-   
-    <section id="about" class="about contenedor">
+    <section id="about"></section>
+
+    <section class="about contenedor">
         <div class="about__cabecera">
                 
                     <h2 class="about__heading">About Me</h2>    
@@ -146,7 +152,9 @@
         </div>
     </section>
 
-    <main id="projects" class="projects contenedor">
+    <section id="projects"></section>
+
+    <main class="projects contenedor">
         <div class="projects__cabecera">
                 
             <h2 class="projects__heading">Projects</h2>    
@@ -166,7 +174,7 @@
             
                                 <picture class="project__imagen">
                                     <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="css">
-                                </picture class="project__imagen">
+                                </picture>
           
                                 <picture class="project__imagen">
                                     <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="javascript">
@@ -196,7 +204,7 @@
             
                                 <picture class="project__imagen">
                                     <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="css">
-                                </picture class="project__imagen">
+                                </picture>
           
                                 <picture class="project__imagen">
                                     <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="javascript">
@@ -225,7 +233,7 @@
             
                                 <picture class="project__imagen">
                                     <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="css">
-                                </picture class="project__imagen">
+                                </picture>
           
                                 <picture class="project__imagen">
                                     <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="javascript">
@@ -247,7 +255,9 @@
       
     </main>
 
-    <section id="skills" class="skills contenedor">
+    <section id="skills"></section>
+
+    <section class="skills contenedor">
         <h2 class="skills__heading">Skills</h2>
 
         <div class="skills__grid">
@@ -293,7 +303,9 @@
         </div>
     </section>
 
-    <section id="contact" class="contact contenedor">
+    <section id="contact"></section>
+
+    <section class="contact contenedor">
         <h2 class="contact__heading">Contact</h2>
         <div class="contact__form">
             <form class="formulario">

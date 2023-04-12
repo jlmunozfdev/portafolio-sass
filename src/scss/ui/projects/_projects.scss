@@ -4,6 +4,13 @@
 
 
 .projects {
+
+    @include m.tablet { 
+        margin-top: 8rem;
+    }
+    @include m.desktop { 
+        margin-top: 10rem;
+    }
    
     &__cabecera {
         display: flex;

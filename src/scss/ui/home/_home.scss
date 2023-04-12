@@ -3,15 +3,20 @@
 /* Home */
 
 .home {
-
+    
     position: relative;
 
     @include m.tablet {
+        margin-top: 8rem;
         display: grid;
         grid-template-columns: 2fr 1fr;
         height: 50rem;
         align-items: center;
         @include m.imagenBG('/assets/img/home/home.webp'); 
+    }
+
+    @include m.desktop { 
+        margin-top: 10rem;
     }
 
     &__heading {
