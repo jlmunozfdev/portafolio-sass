@@ -6,13 +6,9 @@
     position: relative;
     
     &__contenedor {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        padding: 4rem 0;
-
+        display: none;
         @include m.tablet {
-            
+            display: flex;
             position: fixed;
             top: 0;
             left: 0;

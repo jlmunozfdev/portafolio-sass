@@ -7,7 +7,7 @@
     <title>jlmunozfdev | Web Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Overpass:wght@200;400;600;900&family=Poppins:wght@200;400;600;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Overpass:wght@200;400;600;900&family=Poppins:wght@200;400;600;800;900&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/app.css">
      <!-- Link Swiper's CSS -->
@@ -21,9 +21,34 @@
 </head>
 <body>
 
-    <header class="header">
+    <div class="menu">
+        <div class="menu__contenedor">
+            <div class="menu__title" onclick="hamburguer()">
+            <a href="index.html">Jorge Muñoz</a>
+            <span class="fa fa-bars"></span>
+             <div class="arrow"></div>
+            </div>
+            <div class="menu__dropdown">
+                <div class="toggles">
+                    <div class="toggle" id="toggle">
+                        <input type="checkbox">
+                        <span></span>
+                    </div>
+                </div>
+                
+                <div class="menu__enalaces">
+                    <a class="menu__link"  href="#about">About me</a>               
+                    <a class="menu__link"  href="#projects">Projects</a>    
+                    <a class="menu__link"  href="#skills">Skills</a>
+                    <a class="menu__link"  href="#contact">Contact</a> 
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <header class="header">
         <div class="header__contenedor">
+
             <div class="header__logo">
                 <h1 class="header__heading"><a href="index.html">Jorge Muñoz</a></h1>
             </div>
@@ -40,15 +65,8 @@
                     <input type="checkbox">
                     <span></span>
                 </div>
-    
-                <div class="hamburger">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
             </div>
         </div>
-
     </header>
 
     <section id="home" class="home contenedor">

@@ -1,0 +1,97 @@
+@use 'base/variables' as v; 
+@use 'base/mixins' as m;
+/* Menú Mobile */
+
+.menu {
+
+    width: 26rem;
+    margin: 6rem auto 0;
+    cursor: pointer;
+   
+    @include m.tablet { 
+        display: none;
+    }
+
+    &__contenedor {
+        position: fixed;
+        top: 1rem;
+        right: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    &__title {
+        position: relative;
+        font-size: 2rem;
+        padding: 1rem;
+        background: rgba( 255, 255, 255, 0.1 );
+        box-shadow: 0 2px 8px 0 rgba(48, 19, 177, 0.35);
+        backdrop-filter: blur( 3px );
+        -webkit-backdrop-filter: blur( 3px );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        border-radius: 20rem;
+
+        a {
+            color: v.$primario;
+            font-family: v.$fuenteMobile;
+            
+        }
+    }
+
+    span {
+        float: right;
+        font-size: 2rem;
+        color: v.$primario;
+    }
+
+    &__dropdown {
+        width: 100%;
+        background: rgba( 255, 255, 255, 0.1 );
+        box-shadow: 0 2px 8px 0 rgba(48, 19, 177, 0.35);
+        backdrop-filter: blur( 3px );
+        -webkit-backdrop-filter: blur( 3px );
+        border-radius: 4px;
+        margin-top: 24px;
+        max-height: 0;
+        overflow: hidden;
+        transition: all .5s;
+    }
+
+
+    &__link {
+            display: block;
+            text-decoration: none;
+            padding: 1rem;
+            margin: 0;
+            color: v.$primario;
+            font-weight: 600;
+            transition: background-color .1s;
+        
+        &:hover {
+            background-color: v.$primario;
+            padding: 1rem;
+            border-radius: 0.2rem;
+            color: v.$secundario;
+           
+        }
+    }
+
+}
+
+.down {
+    max-height: 250px
+}
+
+.arrow {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    position: absolute;
+    right: 20px;
+    bottom: -24px;
+    display: none
+}
+
+.arrow.gone {
+    display: block
+}

@@ -3,14 +3,12 @@
 /* Toggle */
 
 .toggles {
-  align-self: self-end;
-  margin-right: 1rem;
-  order: 1;
+  margin: 2rem;
 
   @include m.tablet { 
+    margin: 0;
     align-self: center;
     margin-right: 0;
-    order: 0;
   }
 }
 
