@@ -22,3 +22,6 @@ function descargarPDF() {
   
   // Asignar la función de descarga al botón
   document.getElementById("descargar").addEventListener("click", descargarPDF);
+
+
+/* Hamburguer */
