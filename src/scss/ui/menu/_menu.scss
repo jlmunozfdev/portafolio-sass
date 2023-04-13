@@ -24,8 +24,8 @@
         position: relative;
         font-size: 2rem;
         padding: 1rem;
-        background-color: rgba(48, 19, 177, 0.3);
-       
+        background: rgba( 255, 255, 255, 0.1 );
+        box-shadow: 0 2px 8px 0 rgba(48, 19, 177, 0.35);
         backdrop-filter: blur( 3px );
         -webkit-backdrop-filter: blur( 3px );
         border: 1px solid rgba( 255, 255, 255, 0.18 );
@@ -46,8 +46,8 @@
 
     &__dropdown {
         width: 100%;
-        background-color: rgba(48, 19, 177, 0.3);
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        background: rgba( 255, 255, 255, 0.1 );
+        box-shadow: 0 2px 8px 0 rgba(48, 19, 177, 0.35);
         backdrop-filter: blur( 3px );
         -webkit-backdrop-filter: blur( 3px );
         border-radius: 4px;
