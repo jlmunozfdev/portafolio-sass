@@ -6,7 +6,7 @@
 
 ---
 <p align="left">
-<img align="center" src="/readme/portfolio.gif" alt="portfolio" height="800" width="800" />
+<img align="center" src="/readme/portfolio.gif" alt="portfolio" height="620" width="1360" />
 
 
 
