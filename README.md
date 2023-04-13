@@ -1,13 +1,16 @@
-# Creation my Portfolio (V1.2)
+# Creation my Portfolio (V.2)
 
-## Hello 🖐️, My name is Jorge Muñoz and I have created my portfolio in order to show my projects and the knowledge acquired until today.
+## Hello 🖐️, My name is Jorge Muñoz and I have created my portfolio in its V2.0 using HTML, CSS, SASS and JavaScript.
 
 ### Thank you very much for being here! ❤️
 
 ---
-![Potfolio]()
+<p align="left">
+<img align="center" src="/readme/portfolio.gif" alt="portfolio" height="800" width="800" />
 
-<a href="" target="blank">See portfolio <img align="center" src="https://cdn-icons-png.flaticon.com/512/1150/1150626.png" alt="jlmunozf" height="40" width="40"/></a>
+
+
+<a href="https://jlmunozfdev.vercel.app" target="blank">See portfolio <img align="center" src="https://cdn-icons-png.flaticon.com/512/1150/1150626.png" alt="jlmunozf" height="40" width="40"/></a>
 ---
 ---
 ## Connect with me:
