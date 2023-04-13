@@ -1,3 +1,14 @@
+/* Loader */
+
+let loading = document.getElementById("preloader");
+
+window.onload = () => {
+	setTimeout(function(){
+		loading.style.display = "none";
+	}, 1000)
+}
+
+
 /* Toggle Menu*/
 const themeToggle = document.querySelector('#toggle');
 const themeToggle2 = document.querySelector('#menu-toggle');
