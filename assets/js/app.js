@@ -11,9 +11,6 @@ themeToggle2.addEventListener('click', () => {
 });
 
 
-
-
-
 /* Button  Download CV */
 function descargarPDF() {
 	// Ruta del archivo PDF en la carpeta del proyecto
@@ -45,4 +42,31 @@ function hamburguer() {
     } else {
       document.getElementsByClassName('dropdown')[0].style.overflow = 'hidden'
     }
-  }
+}
+
+/* Enviar Email */
+
+const form = document.getElementById('form');
+
+
+async function handleSendEmail(event) {
+	event.preventDefault()
+
+	const fd = new FormData(this)
+
+	const response = await fetch('https://formspree.io/f/xyyajaey', {
+		method: 'POST',
+		body: fd,
+		headers:  {
+			Accept: 'application/json'
+		}
+	})
+
+	if (response.ok) {
+		this.reset()
+		alert('Mensaje Enviado')
+	}else
+		alert('Error al enviar el mensaje')
+}
+
+form.addEventListener('submit', handleSendEmail)
