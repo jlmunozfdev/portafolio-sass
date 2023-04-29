@@ -94,6 +94,10 @@
             @include m.projectBG('/assets/img/projects/project_3.jpg');
             background-position: 5%;
         }
+        &--imagen4 {
+            @include m.projectBG('/assets/img/projects/project_4.jpg');
+            background-position: 5%;
+        }
 
         
         &:hover {
